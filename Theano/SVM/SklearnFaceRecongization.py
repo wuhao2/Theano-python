@@ -130,3 +130,48 @@ eigenface_titles = ["eigenface %d" % i for i in range(eigenfaces.shape[0])]
 plot_gallery(eigenfaces, eigenface_titles, h, w)
 
 plt.show()
+
+
+
+
+#result as follow:
+"""
+Total dataset size:
+n_samples: 1288
+n_features: 1850
+n_classes: 7
+Extracting the top 150 eigenfaces from 966 faces
+
+done in 1.680s
+Projecting the input data on the eigenfaces orthonormal basis
+done in 0.025s
+Fitting the classifier to the training set
+done in 20.429s
+
+Best estimator found by grid search:
+SVC(C=1000.0, cache_size=200, class_weight='auto', coef0=0.0,
+    decision_function_shape=None, degree=3, gamma=0.005, kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+Predicting people's names on the test set
+done in 0.068s
+
+precision    recall  f1-score   support
+Ariel Sharon       0.93      0.88      0.90        16
+Colin Powell       0.92      0.83      0.88        59
+Donald Rumsfeld       0.92      0.79      0.85        29
+George W Bush       0.82      0.99      0.90       142
+Gerhard Schroeder       1.00      0.66      0.79        29
+Hugo Chavez       1.00      0.93      0.97        15
+Tony Blair       0.92      0.69      0.79        32
+avg / total       0.89      0.88      0.87       322
+
+[[ 14   1   0   1   0   0   0]
+ [  1  49   0   9   0   0   0]
+[  0   1  23   5   0   0   0]
+[  0   1   0 141   0   0   0]
+[  0   1   1   6  19   0   2]
+[  0   0   0   1   0  14   0]
+[  0   0   1   9   0   0  22]]
+
+"""

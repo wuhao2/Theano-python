@@ -1,4 +1,3 @@
-
 print(__doc__)
 import numpy as np
 import pylab as pl
@@ -27,12 +26,12 @@ b = clf.support_vectors_[-1]
 yy_up = a * xx + (b[1] - a * b[0])
 
 
-print "w: ", w
-print "a: ", a
-print " xx: ", xx
-print " yy: ", yy
-print "support_vectors_: ", clf.support_vectors_
-print "clf.coef_: ", clf.coef_
+print ("w: ", w)
+print ("a: ", a)
+print (" xx: ", xx)
+print (" yy: ", yy)
+print ("support_vectors_: ", clf.support_vectors_)
+print ("clf.coef_: ", clf.coef_)
 
 # In scikit-learn coef_ attribute holds the vectors of the separating hyperplanes for linear models. It has shape (n_classes, n_features) if n_classes > 1 (multi-class one-vs-all) and (1, n_features) for binary classification.
 #
